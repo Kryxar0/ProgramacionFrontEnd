@@ -1,9 +1,7 @@
-Programación Front End
+# FRONTEND_IEC_N3_C1
+CV estático unidad 1 HTML y CSS
 
-Descripción:
-Este proyecto corresponde a ejercicios y prácticas de Programación Front End, donde se utilizan herramientas básicas para el desarrollo web.
-
-Herramientas utilizadas:
+Herramientas:
 VS Code
-Repositorio en GitHub
-HTML Boilerplate 1.1.1
+Repositorio en Github
+HTML Boilerplate Version 1.1.1

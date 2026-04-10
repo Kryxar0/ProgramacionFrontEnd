@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Cesar Aedo</title>
+    
+    <style>
+        body {
+            background-color: #e0e0e0; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        #hoja_cv {
+            width: 850px;
+            min-height: 1200px;
+            background-color: white;
+            box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+            display: flex;
+            position: relative; 
+        }
+
+        #foto_perfil {
+            position: absolute;
+            top: 40px;
+            left: 50px;
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            border: 6px solid white;
+            object-fit: cover;
+            background-color: #ccc;
+        }
+
+        #columna_izquierda {
+            width: 32%;
+            background-color: #f0f3f8;
+            padding: 0 25px 30px 25px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .espaciador_foto {
+            height: 240px; 
+        }
+
+        .titulo_lateral {
+            background-color: white;
+            color: #1e2f4d;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 8px 10px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            text-align: left;
+        }
+
+        .lista_lateral {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-size: 12px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .lista_lateral li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .icono {
+            margin-right: 10px;
+            font-size: 14px;
+        }
+
+        .lista_puntos {
+            padding-left: 20px;
+            font-size: 12px;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .lista_puntos li {
+            margin-bottom: 5px;
+        }
+
+        .texto_habilidades {
+            font-size: 11px;
+            color: #333;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        #columna_derecha {
+            width: 68%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #cabecera_derecha {
+            background-color: #1e2f4d;
+            height: 180px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 40px;
+            box-sizing: border-box;
+        }
+
+        #cabecera_derecha h1 {
+            margin: 0;
+            font-size: 32px;
+            letter-spacing: 1px;
+        }
+
+        #cabecera_derecha h2 {
+            margin: 5px 0;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        #contenido_derecho {
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        .titulo_principal {
+            color: #1e2f4d;
+            font-size: 18px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .texto_perfil {
+            font-size: 12px;
+            color: #444;
+            text-align: justify;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .bloque_experiencia {
+            margin-bottom: 20px;
+        }
+
+        .bloque_experiencia h4 {
+            margin: 0 0 5px 0;
+            color: #1e2f4d;
+            font-size: 13px;
+        }
+
+        .bloque_experiencia .fecha {
+            font-size: 12px;
+            font-style: italic;
+            color: #555;
+            margin: 0 0 10px 0;
+        }
+
+        .lista_experiencia {
+            padding-left: 20px;
+            margin: 0;
+            font-size: 12px;
+            color: #444;
+            line-height: 1.5;
+        }
+
+        .lista_experiencia li {
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="hoja_cv">
+        
+        <img src="assets/img/Cesar.png" alt="Foto de Cesar" id="foto_perfil">
+
+        <div id="columna_izquierda">
+            <div class="espaciador_foto"></div>
+            <div class="titulo_lateral">CONTACTO</div>
+            <ul class="lista_lateral">
+                <li><span class="icono">📞</span> +56 9 49379028</li>
+                <li><span class="icono">✉️</span> Cesaraedo987@gmail.com</li>
+                <li><span class="icono">📍</span> Palazuelos 415 Pitrufquen</li>
+            </ul>
+
+            <div class="titulo_lateral">FORMACION ACADEMICA</div>
+            <ul class="lista_puntos">
+                <li>Educación Media Técnico-Profesional</li>
+                <li>Liceo Bicentenario Politécnico</li>
+                <li>Titulado en 2024</li>
+            </ul>
+
+            <div class="titulo_lateral">HABILIDADES</div>
+            
+            <div class="texto_habilidades">
+                <strong>Procedimientos Clínicos:</strong><br>
+                Control de signos vitales. Asistencia en Endoscopía y Cirugía Menor. Vacunación (PNI) y manejo de cadena de frío. Atención domiciliaria.
+            </div>
+
+            <div class="texto_habilidades">
+                <strong>Cuidado Integral:</strong><br>
+                Aseo y confort de pacientes hospitalizados. Cuidado de pacientes geriátricos y postrados. Atención técnica en Maternidad (puérperas y recién nacidos).
+            </div>
+
+            <div class="texto_habilidades">
+                <strong>Gestión y Programas:</strong><br>
+                Control de stock y despacho en Farmacia Hospitalaria. Atención en Programa Cardiovascular. Manejo de registros clínicos y sistemas digitales de salud.
+            </div>
+        </div>
+
+        <div id="columna_derecha">
+            
+            <div id="cabecera_derecha">
+                <h1>Cesar Antonio Aedo Alvarez</h1>
+                <h2>TENM</h2>
+                <h2>22.042.363-8</h2>
+            </div>
+
+            <div id="contenido_derecho">
+                
+                <h3 class="titulo_principal">MI PERFIL</h3>
+                <p class="texto_perfil">
+                    Profesional de la salud con experiencia integral en la Red Asistencial de la Araucanía. Poseo un perfil polifuncional con desempeño probado en unidades críticas y de especialidad como Endoscopía, Cirugía Menor y Maternidad. Especialista en el cuidado directo del paciente (aseo y confort), ejecución de programas de salud pública (Cardiovascular y Vacunatorio) y gestión de insumos en farmacia. Me caracterizo por mi adaptabilidad operativa y un trato humanizado orientado a la recuperación y bienestar del usuario.
+                </p>
+
+                <h3 class="titulo_principal">EXPERIENCIA</h3>
+                
+                <div class="bloque_experiencia">
+                    <h4>• HOSPITAL DE PITRUFQUÉN | ATENCIÓN DE ENFERMERÍA</h4>
+                    <p class="fecha">Julio 2024 – Octubre 2024</p>
+                    <ul class="lista_experiencia">
+                        <li>Unidades de Especialidad: Apoyo técnico en procedimientos de Endoscopía y pabellón de Cirugía Menor.</li>
+                        <li>Hospitalización (Medicina B): Responsable del cuidado integral, aseo, confort y monitoreo de pacientes.</li>
+                        <li>Salud Ambulatoria: Control de signos vitales y atención en el Programa Cardiovascular.</li>
+                        <li>Gestión: Desempeño en la unidad de Farmacia, realizando control y despacho de insumos.</li>
+                    </ul>
+                </div>
+
+                <div class="bloque_experiencia">
+                    <h4>• HOSPITAL DE LONCOCHE | ATENCIÓN DE ENFERMERÍA</h4>
+                    <p class="fecha">Marzo 2023 – Junio 2024</p>
+                    <ul class="lista_experiencia">
+                        <li>Maternidad: Asistencia técnica en cuidados de pre y postparto y atención del recién nacido.</li>
+                        <li>Medicina A y B: Ejecución de planes de cuidado, administración de indicaciones médicas y control de signos vitales.</li>
+                    </ul>
+                </div>
+
+                <div class="bloque_experiencia">
+                    <h4>• CESFAM DE PITRUFQUÉN | ATENCIÓN DE ENFERMERÍA</h4>
+                    <p class="fecha">Marzo 2024 – Junio 2024</p>
+                    <ul class="lista_experiencia">
+                        <li>Inmunización: Encargado de Vacunatorio, aplicando dosis según calendario nacional y registro RNI.</li>
+                        <li>Procedimientos: Ejecución de toma de muestras de sangre y otros fluidos biológicos.</li>
+                        <li>Comunidad: Realización de atención domiciliaria para pacientes con dependencia severa.</li>
+                    </ul>
+                </div>
+
+                <div class="bloque_experiencia">
+                    <h4>• ELEAM LOS SABINOS (TEMUCO / LOS LAGOS) | AT. ENFERMERÍA</h4>
+                    <p class="fecha">Julio 2023 – Noviembre 2023</p>
+                    <ul class="lista_experiencia">
+                        <li>Cuidados geriátricos especializados, enfocados en la mantención de la autonomía y confort del adulto mayor.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

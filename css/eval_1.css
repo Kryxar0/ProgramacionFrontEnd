@@ -1,0 +1,76 @@
+body{
+    background-color: antiquewhite;
+}
+
+p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.imagen_superior{
+    opacity: 50%;
+}
+
+#banner_superior{
+    border: 1px solid black;
+    display: inline-flex;
+    padding: 10px;
+    width: 100% ;
+}
+
+#contenedor_principal{
+    width: 100%;
+}
+
+#pie_pagina{
+    width: 100%;
+}
+
+#parrafo_prueba{
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+}
+
+.banner_superior{
+    border: 1px solid black;
+    /* border-radius: 25px; */
+    display: inline-flex;
+}
+
+#pagina_completa{
+    display: inline-block;
+}
+
+#imagen_superior{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#superior_derecho{
+    padding-left: 25px;
+}
+
+#principal_izquierda{
+    width: 25%;
+}
+
+#principal_derecha{
+    padding: 5px;
+}
+
+#pie_pagina{
+    display: inline-flex;
+}
+
+.div_pie_pagina{
+    margin: auto;
+    padding: 15px;
+}
+
+.button{
+    padding: 5px;
+    border-color: brown;
+    border-radius: 50%;
+    display: block;
+    background-color: aqua;
+}
