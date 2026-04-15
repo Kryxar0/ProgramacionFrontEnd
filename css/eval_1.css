@@ -1,85 +1,78 @@
-/* ESTILOS GENERALES DEL PROYECTO
-   Estos comentarios sirven para distinguir rápidamente la función de cada bloque 
-   y facilitar la edición de la estructura de la página. att: Cesar Aedo 
-*/
-
-
-
 body {
-    background-color: #e0e0e0; /* Color gris de fondo para que la hoja resalte */
-    margin: 0; /* Elimina el margen por defecto del navegador */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía profesional */
-    padding: 40px 0; /* Espacio arriba y abajo para que la hoja no toque los bordes */
-    display: flex; /* Activa el modo de caja flexible para alinear contenido */
-    justify-content: center; /* Centra la hoja horizontalmente en la pantalla */
+    background-color: #e0e0e0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
 }
 
 #hoja_cv {
-    width: 850px; /* Ancho de la hoja */
-    min-height: 1200px; /* Alto mínimo */
-    background-color: white; /* Color del papel */
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.2); /* Sombra para efecto 3D */
-    display: flex; /* Divide en columnas (izquierda y derecha) */
-    position: relative; /* Base para posicionar la foto */
+    width: 850px;
+    min-height: 1200px;
+    background-color: white;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+    display: flex;
+    position: relative;
 }
 
 #foto_perfil {
-    position: absolute; /* Permite mover la foto libremente */
-    top: 40px; /* Distancia desde arriba */
-    left: 50px; /* Distancia desde la izquierda */
-    width: 170px; /* Ancho de la foto */
-    height: 170px; /* Alto de la foto */
-    border-radius: 50%; /* Hace la foto circular */
-    border: 6px solid white; /* Borde blanco grueso */
-    object-fit: cover; /* Centra la imagen sin deformarla */
-    background-color: #ccc; /* Fondo si no hay imagen */
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 6px solid white;
+    object-fit: cover;
+    background-color: #ccc;
 }
 
 #columna_izquierda {
-    width: 32%; /* Ancho de la barra lateral */
-    background-color: #f0f3f8; /* Color de fondo grisáceo/azul */
-    padding: 0 25px 30px 25px; /* Espacios internos */
-    box-sizing: border-box; /* Mantiene el ancho exacto */
+    width: 32%;
+    background-color: #f0f3f8;
+    padding: 0 25px 30px 25px;
+    box-sizing: border-box;
     display: flex;
-    flex-direction: column; /* Elementos uno bajo otro */
+    flex-direction: column;
 }
 
 .espaciador_foto {
-    height: 240px; /* Deja espacio para que el texto no tape la foto */
+    height: 240px;
 }
 
 .titulo_lateral {
-    background-color: white; /* Fondo blanco para el título */
-    color: #1e2f4d; /* Color azul oscuro */
+    background-color: white;
+    color: #1e2f4d;
     font-weight: bold;
     font-size: 15px;
     padding: 8px 10px;
     margin-top: 20px;
     margin-bottom: 15px;
-    text-transform: uppercase; /* Mayúsculas */
+    text-transform: uppercase;
 }
 
 .lista_lateral {
-    list-style-type: none; /* Quita los puntos de la lista */
+    list-style-type: none;
     padding: 0;
     margin: 0;
     font-size: 12px;
-    line-height: 1.6; /* Separación de líneas */
+    line-height: 1.6;
 }
 
 .lista_lateral li {
     margin-bottom: 10px;
     display: flex;
-    align-items: flex-start; /* Alinea icono con texto */
+    align-items: flex-start;
 }
 
 .icono {
-    margin-right: 10px; /* Espacio entre icono y texto */
+    margin-right: 10px;
     font-size: 14px;
 }
 
 .lista_puntos {
-    padding-left: 20px; /* Sangría para los puntos */
+    padding-left: 20px;
     font-size: 12px;
 }
 
@@ -94,36 +87,36 @@ body {
 }
 
 #columna_derecha {
-    width: 68%; /* Ancho del contenido principal */
+    width: 68%;
     display: flex;
     flex-direction: column;
 }
 
 #cabecera_derecha {
-    background-color: #1e2f4d; /* Fondo azul oscuro del encabezado */
+    background-color: #1e2f4d; 
     height: 180px;
-    color: white; /* Texto blanco */
+    color: white; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra nombre y puesto verticalmente */
+    justify-content: center; 
     padding-left: 40px;
     box-sizing: border-box;
 }
 
 #cabecera_derecha h1 {
     margin: 0;
-    font-size: 32px; /* Tamaño del nombre */
+    font-size: 32px; 
     letter-spacing: 1px;
 }
 
 #cabecera_derecha h2 {
     margin: 5px 0;
-    font-size: 18px; /* Tamaño del cargo */
+    font-size: 18px; 
     font-weight: normal;
 }
 
 #contenido_derecho {
-    padding: 40px; /* Margen interno de la columna derecha */
+    padding: 40px; 
     box-sizing: border-box;
 }
 
@@ -131,14 +124,14 @@ body {
     color: #1e2f4d;
     font-size: 18px;
     text-transform: uppercase;
-    border-bottom: 2px solid #e0e0e0; /* Línea decorativa abajo */
+    border-bottom: 2px solid #e0e0e0; 
     padding-bottom: 5px;
     margin-bottom: 15px;
 }
 
 .texto_perfil {
     font-size: 12px;
-    text-align: justify; /* Alineado parejo a los lados */
+    text-align: justify; 
     line-height: 1.5;
     margin-bottom: 30px;
 }
@@ -155,7 +148,7 @@ body {
 
 .bloque_experiencia .fecha {
     font-size: 12px;
-    font-style: italic; /* Texto en cursiva */
+    font-style: italic; 
     color: #555;
     margin-bottom: 10px;
 }
