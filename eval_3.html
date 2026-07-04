@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación 3 - Formulario</title>
+    <link rel="stylesheet" href="./css/vapor.css" />
+    <link rel="stylesheet" href="./css/form.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Inicio (Data Tables)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./eval_3.html">Nuevo Usuario</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card p-4 bg-dark border-secondary shadow">
+                    <h2 class="text-center mb-4 text-light">Formulario de Registro</h2>
+                    <form id="formRegistro" onsubmit="return false;">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label text-light">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                            <div class="invalid-feedback"></div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="usuario" class="form-label text-light">Nombre de Usuario</label>
+                            <input type="text" class="form-control" id="usuario" placeholder="Ingrese nombre de usuario" maxlength="12">
+                            <div class="invalid-feedback"></div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="fecha_ingreso" class="form-label text-light">Fecha de Ingreso</label>
+                            <input type="date" class="form-control" id="fecha_ingreso">
+                            <div class="invalid-feedback">La fecha de ingreso es obligatoria.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-light">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="correo@servidor.com">
+                            <div class="invalid-feedback">Ingrese un correo electrónico válido.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="sitio_web" class="form-label text-light">Sitio Web</label>
+                            <input type="text" class="form-control" id="sitio_web" placeholder="https://ejemplo.com">
+                            <div class="invalid-feedback">Ingrese una URL válida (ej: https://ejemplo.com).</div>
+                        </div>
+
+                        <div class="d-flex justify-content-between mt-4">
+                            <button type="button" id="btnCancelar" class="btn btn-secondary w-45">Cancelar</button>
+                            <button type="button" id="btnEnviar" class="btn btn-primary w-45">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jQuery v4.0.0.js"></script>
+    <script src="./js/validaciones.js"></script>
+</body>
+
+</html>
